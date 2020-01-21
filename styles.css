@@ -7,8 +7,8 @@
   box-sizing: inherit;
 }
 html {
-  font-family: 'Nunito', sans-serif;
-  font-size: 10px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 12px;
   box-sizing: border-box;
 }
 a {
@@ -56,6 +56,10 @@ nav {
 .nav-brand {
   width: 2rem;
 }
+.nav-brand i {
+  font-size: 3rem;
+  color: #ececee;
+}
 .menu-icons i {
   font-size: 3.5rem;
   color: #fafafa;
@@ -99,13 +103,13 @@ nav {
 /* hero */
 .hero {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background: linear-gradient(
       135deg,
-      rgba(49, 24, 131, 0.9) 0%,
-      rgba(72, 56, 149, 0.8) 100%
+      rgba(44, 192, 141, 0.9) 0%,
+      rgba(44, 192, 141, 0.8) 100%
     ),
-    url('images/header-bg.jpg') center no-repeat;
+    url('images/hero-one.jpg') center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -125,7 +129,6 @@ nav {
   width: 100%;
   max-width: 50rem;
   color: #fafafa;
-  text-transform: uppercase;
   transform: translateY(20%);
 }
 .main-message h3 {
@@ -134,10 +137,7 @@ nav {
 .main-message h1 {
   font-family: 'Aldrich', sans-serif;
   font-size: 4rem;
-  margin: 1rem 0;
-}
-.main-message p {
-  text-transform: lowercase;
+  margin: 0;
 }
 
 .btn {
@@ -159,29 +159,31 @@ nav {
 }
 .title-heading {
   text-align: center;
-  text-transform: uppercase;
   margin-bottom: 10rem;
   color: rgba(0, 0, 0, 0.7);
 }
 .title-heading h3 {
   font-size: 1.4rem;
+  text-transform: uppercase;
 }
 .title-heading h1 {
   font-family: 'Aldrich', sans-serif;
   font-size: 2rem;
   margin: 0.5rem 0 1rem;
+  text-transform: uppercase;
 }
 .title-heading p {
-  text-transform: lowercase;
+  padding: 2rem 0 2rem 0;
 }
+
 .activities-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2.5rem;
 }
 .activities-grid-item {
-  height: 40rem;
-  padding: 5rem;
+  height: 36rem;
+  padding: 6rem;
   color: #fafafa;
   position: relative;
   display: flex;
@@ -199,8 +201,8 @@ nav {
   height: 100%;
   background-image: linear-gradient(
     135deg,
-    rgba(49, 24, 131, 0.9) 0%,
-    rgba(72, 56, 149, 0.8) 100%
+    rgba(44, 192, 141, 0.9) 0%,
+    rgba(44, 192, 141, 0.8) 100%
   );
   z-index: -1;
 }
@@ -230,10 +232,10 @@ nav {
   height: 80vh;
   background: linear-gradient(
       135deg,
-      rgba(49, 24, 131, 0.9) 0%,
-      rgba(72, 56, 149, 0.8) 100%
+      rgba(44, 192, 141, 0.9) 0%,
+      rgba(44, 192, 141, 0.8) 100%
     ),
-    url('images/testimonials-bg.jpg') center no-repeat fixed;
+    url('images/me.jpg') center no-repeat fixed;
   background-size: cover;
   position: relative;
 }
@@ -251,7 +253,7 @@ nav {
   width: 100%;
   color: #fafafa;
   position: absolute;
-  top: 55%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -296,6 +298,9 @@ footer {
 
 /* Media Queries */
 @media screen and (min-width: 350px) {
+  .hero {
+    height: 80vh;
+  }
   .main-message {
     transform: translateY(40%);
   }
@@ -306,8 +311,17 @@ footer {
     background: url('images/wave-medium.png');
     background-size: cover;
   }
+  .testimonial {
+    width: 100%;
+    color: #fafafa;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
   .testimonials::before {
-    height: 9.4rem;
+    height: 10.4rem;
     background: url('images/wave-medium-reversed.png');
     background-size: cover;
   }
@@ -364,7 +378,7 @@ footer {
     transform: scaleX(1);
   }
   .hero {
-    height: 60vh;
+    height: 70vh;
   }
   .main-message {
     transform: translateY(50%);
@@ -388,5 +402,14 @@ footer {
 @media screen and (min-width: 1200px) {
   .hero {
     height: 75vh;
+  }
+  .testimonial {
+    width: 100%;
+    color: #fafafa;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 }
