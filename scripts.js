@@ -14,10 +14,10 @@ selectElement('.close').addEventListener('click', () => {
 
 // Reveal on scroll
 ScrollReveal().reveal('.hero');
-ScrollReveal().reveal('.star-gazing', { delay: 500 });
-ScrollReveal().reveal('.hiking', { delay: 500 });
-ScrollReveal().reveal('.camping', { delay: 500 });
-ScrollReveal().reveal('.testimonial-customer', { delay: 500 });
-ScrollReveal().reveal('.testimonial-text-box', { delay: 500 });
+ScrollReveal().reveal('.star-gazing', { delay: 300 });
+ScrollReveal().reveal('.hiking', { delay: 300 });
+ScrollReveal().reveal('.camping', { delay: 300 });
+ScrollReveal().reveal('.testimonial-customer', { delay: 200 });
+ScrollReveal().reveal('.testimonial-text-box', { delay: 200 });
 ScrollReveal().reveal('.begin-adventure', { delay: 300 });
 ScrollReveal().reveal('.adventure-grid-item', { delay: 300 });

@@ -66,12 +66,15 @@ nav {
   cursor: pointer;
 }
 .close i {
-  color: #eb648c;
+  color: rgb(193, 198, 216);
+}
+.close i:hover {
+  color: rgb(75, 105, 214);
 }
 .nav-list {
   width: 25rem;
   height: 100vh;
-  background-color: #d7d4ed;
+  background-color: rgb(160, 178, 204);
   position: fixed;
   top: 0;
   right: -26rem;
@@ -79,7 +82,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 1500;
+  z-index: 500 !important;
   transition: all 650ms ease-in-out;
 }
 .nav-list.active {
@@ -106,8 +109,8 @@ nav {
   height: 100vh;
   background: linear-gradient(
       135deg,
-      rgba(44, 192, 141, 0.9) 0%,
-      rgba(44, 192, 141, 0.8) 100%
+      rgba(59, 204, 192, 0.9) 0%,
+      rgba(59, 204, 192, 0.8) 100%
     ),
     url('images/hero-one.jpg') center no-repeat;
   background-size: cover;
@@ -141,7 +144,7 @@ nav {
 }
 
 .btn {
-  background-color: #eb648c;
+  background-color: rgb(89, 133, 199);
   border-radius: 2rem;
   color: #fafafa;
   display: inline-block;
@@ -150,11 +153,11 @@ nav {
   transition: background-color 650ms;
 }
 .btn:hover {
-  background-color: #ce587b;
+  background-color: rgb(27, 118, 255);
 }
 /* experience */
 
-.experience-outdoors {
+.experience {
   padding: 0;
 }
 .title-heading {
@@ -201,25 +204,21 @@ nav {
   height: 100%;
   background-image: linear-gradient(
     135deg,
-    rgba(44, 192, 141, 0.9) 0%,
-    rgba(44, 192, 141, 0.8) 100%
+    rgba(59, 204, 192, 0.9) 0%,
+    rgba(59, 204, 192, 0.8) 100%
   );
   z-index: -1;
 }
-.star-gazing {
+.card-one {
   background: url('images/stars.jpg') center no-repeat;
 }
-.hiking {
+.card-two {
   background: url('images/stars.jpg') center no-repeat;
 }
-.camping {
+.card-three {
   background: url('images/stars.jpg') center no-repeat;
 }
 
-.activities-grid-item i {
-  font-size: 4rem;
-  color: #eb648c;
-}
 .activities-grid-item h1 {
   font-family: 'Aldrich', sans-serif;
   font-size: 1.7rem;
@@ -232,8 +231,8 @@ nav {
   height: 80vh;
   background: linear-gradient(
       135deg,
-      rgba(44, 192, 141, 0.9) 0%,
-      rgba(44, 192, 141, 0.8) 100%
+      rgba(59, 204, 192, 0.9) 0%,
+      rgba(59, 204, 192, 0.8) 100%
     ),
     url('images/me.jpg') center no-repeat fixed;
   background-size: cover;
@@ -269,7 +268,7 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   font-size: 8rem;
-  color: #eb648c;
+  color: rgb(0, 79, 197);
   opacity: 0.5;
   z-index: -1;
 }
@@ -277,7 +276,8 @@ nav {
   width: 10rem;
   height: 10rem;
   border-radius: 100%;
-  border: 3px solid #eb648c;
+  border: 3px solid rgb(0, 79, 197);
+  background: white;
 }
 /* Begin Adventure */
 .adventure-grid {
@@ -291,7 +291,7 @@ nav {
 
 footer {
   padding: 2.5rem 0;
-  background-color: #d7d4ed;
+  background-color: rgb(152, 174, 206);
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -303,13 +303,6 @@ footer {
   }
   .main-message {
     transform: translateY(40%);
-  }
-}
-@media screen and (min-width: 470px) {
-  .hero::before {
-    height: 9.4rem;
-    background: url('images/wave-medium.png');
-    background-size: cover;
   }
   .testimonial {
     width: 100%;
@@ -324,6 +317,30 @@ footer {
     height: 10.4rem;
     background: url('images/wave-medium-reversed.png');
     background-size: cover;
+  }
+}
+@media screen and (min-width: 470px) {
+  .hero::before {
+    height: 9.4rem;
+    background: url('images/wave-medium.png');
+    background-size: cover;
+  }
+  .testimonial {
+    width: 100%;
+    color: #fafafa;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .testimonials::before {
+    height: 10.4rem;
+    background: url('images/wave-medium-reversed.png');
+    background-size: cover;
+  }
+  .ion-md-menu {
+    position: sticky;
   }
 }
 @media screen and (min-width: 700px) {
@@ -364,7 +381,7 @@ footer {
     position: absolute;
     left: 0;
     bottom: -0.5rem;
-    background-color: #eb648c;
+    background-color: rgb(0, 79, 197);
     width: 100%;
     height: 2px;
     transform: scaleX(0);
